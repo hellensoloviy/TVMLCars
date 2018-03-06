@@ -10,6 +10,10 @@
 		9B154D13204E841400788824 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B154D12204E841400788824 /* AppDelegate.swift */; };
 		9B154D16204E841400788824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D15204E841400788824 /* Assets.xcassets */; };
 		9B154D21204E841400788824 /* TVMLCarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B154D20204E841400788824 /* TVMLCarsUITests.swift */; };
+		9B154D2D204E846000788824 /* Presenter.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D2C204E846000788824 /* Presenter.js */; };
+		9B154D2F204E846600788824 /* ResourceLoader.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D2E204E846600788824 /* ResourceLoader.js */; };
+		9B154D35204E847900788824 /* CarsParade.xml.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D32204E847900788824 /* CarsParade.xml.js */; };
+		9B154D37204E85CF00788824 /* application.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D14204E841400788824 /* application.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +35,9 @@
 		9B154D1C204E841400788824 /* TVMLCarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVMLCarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B154D20204E841400788824 /* TVMLCarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMLCarsUITests.swift; sourceTree = "<group>"; };
 		9B154D22204E841400788824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B154D2C204E846000788824 /* Presenter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Presenter.js; sourceTree = "<group>"; };
+		9B154D2E204E846600788824 /* ResourceLoader.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ResourceLoader.js; sourceTree = "<group>"; };
+		9B154D32204E847900788824 /* CarsParade.xml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = CarsParade.xml.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				9B154D12204E841400788824 /* AppDelegate.swift */,
-				9B154D14204E841400788824 /* application.js */,
+				9B154D2B204E844C00788824 /* js */,
 				9B154D15204E841400788824 /* Assets.xcassets */,
 				9B154D17204E841400788824 /* Info.plist */,
 			);
@@ -87,6 +94,25 @@
 				9B154D22204E841400788824 /* Info.plist */,
 			);
 			path = TVMLCarsUITests;
+			sourceTree = "<group>";
+		};
+		9B154D2B204E844C00788824 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				9B154D14204E841400788824 /* application.js */,
+				9B154D2E204E846600788824 /* ResourceLoader.js */,
+				9B154D2C204E846000788824 /* Presenter.js */,
+				9B154D30204E846E00788824 /* templates */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		9B154D30204E846E00788824 /* templates */ = {
+			isa = PBXGroup;
+			children = (
+				9B154D32204E847900788824 /* CarsParade.xml.js */,
+			);
+			path = templates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +197,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B154D2F204E846600788824 /* ResourceLoader.js in Resources */,
 				9B154D16204E841400788824 /* Assets.xcassets in Resources */,
+				9B154D2D204E846000788824 /* Presenter.js in Resources */,
+				9B154D37204E85CF00788824 /* application.js in Resources */,
+				9B154D35204E847900788824 /* CarsParade.xml.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

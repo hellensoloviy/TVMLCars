@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
             if appObject.hasProperty(methodName) {
                 appObject.invokeMethod(methodName, withArguments: [])
             }
-            }, completion: completion)
+        }, completion: completion)
     }
     
     // MARK: UIApplicationDelegate

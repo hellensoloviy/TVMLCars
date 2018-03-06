@@ -6,13 +6,13 @@ var Template = function() { return `<?xml version="1.0" encoding="UTF-8" ?>
         <title>Cars</title>
       </header>
     <section>
-      <listItemLockup>
+      <listItemLockup id="Lamborghini">
         <title>Lamboghini</title>
       </listItemLockup>
-      <listItemLockup>
+      <listItemLockup id="Ferrari">
         <title>Ferrari</title>
       </listItemLockup>
-     <listItemLockup>
+     <listItemLockup id="Tesla">
         <title>Tesla</title>
      </listItemLockup>
     </section>
@@ -27,3 +27,4 @@ var Template = function() { return `<?xml version="1.0" encoding="UTF-8" ?>
     </paradeTemplate>
   </document>`
 }
+

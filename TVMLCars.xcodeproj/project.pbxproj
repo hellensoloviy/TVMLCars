@@ -14,6 +14,7 @@
 		9B154D2F204E846600788824 /* ResourceLoader.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D2E204E846600788824 /* ResourceLoader.js */; };
 		9B154D35204E847900788824 /* CarsParade.xml.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D32204E847900788824 /* CarsParade.xml.js */; };
 		9B154D37204E85CF00788824 /* application.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D14204E841400788824 /* application.js */; };
+		9B154D39204E969F00788824 /* DialogManager.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D38204E969F00788824 /* DialogManager.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		9B154D2C204E846000788824 /* Presenter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Presenter.js; sourceTree = "<group>"; };
 		9B154D2E204E846600788824 /* ResourceLoader.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ResourceLoader.js; sourceTree = "<group>"; };
 		9B154D32204E847900788824 /* CarsParade.xml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = CarsParade.xml.js; sourceTree = "<group>"; };
+		9B154D38204E969F00788824 /* DialogManager.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DialogManager.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				9B154D14204E841400788824 /* application.js */,
 				9B154D2E204E846600788824 /* ResourceLoader.js */,
 				9B154D2C204E846000788824 /* Presenter.js */,
+				9B154D38204E969F00788824 /* DialogManager.js */,
 				9B154D30204E846E00788824 /* templates */,
 			);
 			path = js;
@@ -199,6 +202,7 @@
 			files = (
 				9B154D2F204E846600788824 /* ResourceLoader.js in Resources */,
 				9B154D16204E841400788824 /* Assets.xcassets in Resources */,
+				9B154D39204E969F00788824 /* DialogManager.js in Resources */,
 				9B154D2D204E846000788824 /* Presenter.js in Resources */,
 				9B154D37204E85CF00788824 /* application.js in Resources */,
 				9B154D35204E847900788824 /* CarsParade.xml.js in Resources */,

@@ -12,7 +12,7 @@ ResourceLoader.prototype.loadResource = function(resource, callback) {
                     } else {
                         var title = "Resource Loader Error",
                         description = `Error loading resource '${resource}'. \n\n Try again later.`,
-                        alert = createAlert(title, description);
+                        alert = Dialog.makeDialog(title, description);
                         navigationDocument.presentModal(alert);
                     }
                     });

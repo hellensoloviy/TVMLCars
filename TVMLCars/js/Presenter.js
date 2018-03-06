@@ -22,10 +22,10 @@ load: function(event) {
     id = ele.getAttribute("id")
     
     if (id == "Lamborghini") {
-        var dialog = DialogManager.makeDialog('Lamborghini page!','There is no page for now but it will be here soon :)')
-        this.modalDialogPresenter(dialog)
+        var carsModels = CarsModelsBuilder.make()
+//        this.pushDocument(carsModels)
     } else {
-        var dialog = DialogManager.makeDialog('404 Not Found!','No such page can be found. Maybe it is still in progress.')
+        var dialog = DialogManager.makeDefaultDialog('404 Not Found!','No such page can be found. Maybe it is still in progress.')
         this.modalDialogPresenter(dialog)
     }
 },

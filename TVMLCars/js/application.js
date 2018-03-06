@@ -37,7 +37,10 @@ App.onLaunch = function(options) {
     var javascriptFiles = [
                            `${options.BASEURL}/ResourceLoader.js`,
                            `${options.BASEURL}/Presenter.js`,
-                           `${options.BASEURL}/DialogManager.js`
+                           `${options.BASEURL}/DialogManager.js`,
+                           `${options.BASEURL}/CarsModelsBuilder.js`,
+                           `${options.BASEURL}/Loading.js`,
+                           `${options.BASEURL}/Constants.js`
                            ];
     evaluateScripts(javascriptFiles, function(success) {
                     if(success) {
@@ -49,7 +52,7 @@ App.onLaunch = function(options) {
                     } else {
                         var errorTitle = "Evaluate Scripts Error";
                         var errorMessage = "Error attempting to evaluate external JavaScript files."
-                        var alert = DialogManager.makeDialog(errorTitle, errorMessage);
+                        var alert = DialogManager.makeDefaultDialog(errorTitle, errorMessage);
                         navigationDocument.presentModal(alert)
                     }
                 });

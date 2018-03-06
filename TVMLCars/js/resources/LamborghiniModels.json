@@ -1,0 +1,6 @@
+
+[
+ {"type": "artwork", "ID": "00", "url": "/images/cars/l1.jpg", "title": "Surf's Up!"},
+ {"type": "artwork", "ID": "01", "url": "/images/cars/l2.jpg", "title": "Wipe Out!"},
+ {"type": "artwork", "ID": "02", "url": "/images/cars/l3.jpg", "title": "Relaxing"}
+ ]

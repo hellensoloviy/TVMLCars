@@ -22,7 +22,7 @@ parseJson: function parseJson(information) {
     let parsedTemplate = this.templateDocument()
     navigationDocument.pushDocument(parsedTemplate)
     
-    let shelf = parsedTemplate.getElementsByTagName("shelf").item(0)
+    let shelf = parsedTemplate.getElementsByTagName("carousel").item(0)
     let section = shelf.getElementsByTagName("section").item(0)
     
     //create an empty data item for the section
@@ -45,22 +45,20 @@ parseJson: function parseJson(information) {
 templateDocument: function() {
     let template = `<?xml version="1.0" encoding="UTF-8" ?>
     <document>
-    <stackTemplate>
+    <showcaseTemplate>
     <banner>
-    <title>JSON Shelf</title>
+    <title>Lamborghini Models</title>
     </banner>
-    <collectionList>
-    <shelf>
-    <prototypes>
-    <lockup prototype="artwork">
-    <img binding="@src:{url};" width="200" height="300"/>
-    <title binding="textContent:{title};" />
-    </lockup>
-    </prototypes>
-    <section binding="items:{images};" />
-    </shelf>
-    </collectionList>
-    </stackTemplate>
+    <carousel>
+        <prototypes>
+        <lockup prototype="carmodel">
+            <img binding="@src:{url};" width="400" height="300"/>
+            <title binding="textContent:{title};" />
+        </lockup>
+        </prototypes>
+        <section binding="items:{images};" />
+    </carousel>
+    </showcaseTemplate>
     </document>`;
     return new DOMParser().parseFromString(template, "application/xml");
 },

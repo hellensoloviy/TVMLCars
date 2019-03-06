@@ -36,23 +36,26 @@ var resourceLoader;
 App.onLaunch = function(options) {
     var javascriptFiles = [
                            `${options.BASEURL}/ResourceLoader.js`,
-                           `${options.BASEURL}/Presenter.js`
+                           `${options.BASEURL}/Presenter.js`,
+                           `${options.BASEURL}/DialogManager.js`,
+                           `${options.BASEURL}/CarsModelsBuilder.js`,
+                           `${options.BASEURL}/Loading.js`,
+                           `${options.BASEURL}/Constants.js`
                            ];
     evaluateScripts(javascriptFiles, function(success) {
                     if(success) {
                     resourceLoader = new ResourceLoader(options.BASEURL);
                     resourceLoader.loadResource(`${options.BASEURL}/templates/CarsParade.xml.js`, function(resource) {
                                                 var doc = Presenter.makeDocument(resource);
-                                                Presenter.pushDocument(doc);
+                                                    Presenter.pushDocument(doc);
                                                 });
                     } else {
-                    var errorTitle = "Evaluate Scripts Error";
-                    var errorMessage = "Error attempting to evaluate external JavaScript files."
-                    var alert = createAlert(errorTitle, errorMessage);
-                    navigationDocument.presentModal(alert)
+                        var errorTitle = "Evaluate Scripts Error";
+                        var errorMessage = "Error attempting to evaluate external JavaScript files."
+                        var alert = DialogManager.makeDefaultDialog(errorTitle, errorMessage);
+                        navigationDocument.presentModal(alert)
                     }
-                    });
-    
+                });
 }
 
 App.onWillResignActive = function() {
@@ -74,28 +77,3 @@ App.onDidBecomeActive = function() {
 App.onWillTerminate = function() {
     
 }
-
-
-/**
- * This convenience funnction returns an alert template, which can be used to present errors to the user.
- */
-var createAlert = function(title, description) {
-    
-    var alertString = `<?xml version="1.0" encoding="UTF-8" ?>
-    <document>
-    <alertTemplate>
-    <title>${title}</title>
-    <description>${description}</description>
-    <button>
-    <text>OK</text>
-    </button>
-    </alertTemplate>
-    </document>`
-    
-    var parser = new DOMParser();
-    
-    var alertDoc = parser.parseFromString(alertString, "application/xml");
-    
-    return alertDoc
-}
-

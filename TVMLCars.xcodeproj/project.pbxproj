@@ -14,6 +14,12 @@
 		9B154D2F204E846600788824 /* ResourceLoader.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D2E204E846600788824 /* ResourceLoader.js */; };
 		9B154D35204E847900788824 /* CarsParade.xml.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D32204E847900788824 /* CarsParade.xml.js */; };
 		9B154D37204E85CF00788824 /* application.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D14204E841400788824 /* application.js */; };
+		9B154D39204E969F00788824 /* DialogManager.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D38204E969F00788824 /* DialogManager.js */; };
+		9B154D3B204E9F7300788824 /* CarsModelsShowcase.xml.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D3A204E9F7300788824 /* CarsModelsShowcase.xml.js */; };
+		9B154D3F204EA12C00788824 /* CarsModelsBuilder.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D3E204EA12C00788824 /* CarsModelsBuilder.js */; };
+		9B154D42204EA3E700788824 /* LamborghiniModels.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D41204EA3E700788824 /* LamborghiniModels.json */; };
+		9B154D44204EA92700788824 /* Loading.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B154D43204EA92700788824 /* Loading.js */; };
+		9B562A96204EAA920003851E /* Constants.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B562A95204EAA920003851E /* Constants.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		9B154D2C204E846000788824 /* Presenter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Presenter.js; sourceTree = "<group>"; };
 		9B154D2E204E846600788824 /* ResourceLoader.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ResourceLoader.js; sourceTree = "<group>"; };
 		9B154D32204E847900788824 /* CarsParade.xml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = CarsParade.xml.js; sourceTree = "<group>"; };
+		9B154D38204E969F00788824 /* DialogManager.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DialogManager.js; sourceTree = "<group>"; };
+		9B154D3A204E9F7300788824 /* CarsModelsShowcase.xml.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = CarsModelsShowcase.xml.js; sourceTree = "<group>"; };
+		9B154D3E204EA12C00788824 /* CarsModelsBuilder.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = CarsModelsBuilder.js; sourceTree = "<group>"; };
+		9B154D41204EA3E700788824 /* LamborghiniModels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LamborghiniModels.json; sourceTree = "<group>"; };
+		9B154D43204EA92700788824 /* Loading.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Loading.js; sourceTree = "<group>"; };
+		9B562A95204EAA920003851E /* Constants.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Constants.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,14 @@
 		9B154D2B204E844C00788824 /* js */ = {
 			isa = PBXGroup;
 			children = (
+				9B154D40204EA3D600788824 /* resources */,
 				9B154D14204E841400788824 /* application.js */,
 				9B154D2E204E846600788824 /* ResourceLoader.js */,
+				9B562A95204EAA920003851E /* Constants.js */,
 				9B154D2C204E846000788824 /* Presenter.js */,
+				9B154D38204E969F00788824 /* DialogManager.js */,
+				9B154D43204EA92700788824 /* Loading.js */,
+				9B154D3E204EA12C00788824 /* CarsModelsBuilder.js */,
 				9B154D30204E846E00788824 /* templates */,
 			);
 			path = js;
@@ -111,8 +128,17 @@
 			isa = PBXGroup;
 			children = (
 				9B154D32204E847900788824 /* CarsParade.xml.js */,
+				9B154D3A204E9F7300788824 /* CarsModelsShowcase.xml.js */,
 			);
 			path = templates;
+			sourceTree = "<group>";
+		};
+		9B154D40204EA3D600788824 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				9B154D41204EA3E700788824 /* LamborghiniModels.json */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,10 +224,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B154D2F204E846600788824 /* ResourceLoader.js in Resources */,
+				9B154D44204EA92700788824 /* Loading.js in Resources */,
+				9B562A96204EAA920003851E /* Constants.js in Resources */,
+				9B154D3F204EA12C00788824 /* CarsModelsBuilder.js in Resources */,
 				9B154D16204E841400788824 /* Assets.xcassets in Resources */,
+				9B154D3B204E9F7300788824 /* CarsModelsShowcase.xml.js in Resources */,
+				9B154D39204E969F00788824 /* DialogManager.js in Resources */,
 				9B154D2D204E846000788824 /* Presenter.js in Resources */,
 				9B154D37204E85CF00788824 /* application.js in Resources */,
 				9B154D35204E847900788824 /* CarsParade.xml.js in Resources */,
+				9B154D42204EA3E700788824 /* LamborghiniModels.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

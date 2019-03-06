@@ -7,6 +7,8 @@ baseURL: function() {
     
 }
 
-
-/// To run it all u need to start server
+///
+/// Tip:
+/// To run it u'll need to start server via
 /// python -m SimpleHTTPServer 9001
+///
